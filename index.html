@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Boorgir</title>
+</head>
+<body>
+    <div class="container">
+
+        <header>
+            <h1>Create Your Burger</h1>
+        </header>
+    
+        <main>
+            <div class="row">
+                <input type="text" placeholder="Name Your Burger" id="nome_panino">
+            </div>
+    
+            <div class="row">
+                <div class="col-12">
+                    <div class="col-12">
+                        <h3>Ingredients</h3>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 ">
+                            <div class="col-6">
+                                <ul>
+                                    <li>Cheese <input type="checkbox" class="ingredienti"> <span class="add" id="cheese">add</span></li>
+                                    <li>Egg <input type="checkbox" class="ingredienti"> <span class="add" id="egg">add</span></li>
+                                    <li>Mustard <input type="checkbox" class="ingredienti"> <span class="add" id="mustard">add</span></li>
+                                </ul>
+                            </div>
+                            <div class="col-6">
+                                <ul>
+                                    <li>Tomato <input type="checkbox" name="" class="ingredienti"> <span class="add" id="tomato">add</span></li>
+                                    <li>Lettuce <input type="checkbox" name="" class="ingredienti"> <span class="add" id="lettuce">add</span></li>
+                                    <li>Ketchup <input type="checkbox" name="" class="ingredienti"> <span class="add" id="ketchup">add</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <span>Discount Coupon</span>
+                        <input type="text" placeholder="123456ABCDEF" id="coupon">
+                    </div>
+                    <div>
+                        <button id="bottone_panino">Calculate</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    
+        <footer>
+            <div class="row">
+                <div class="col-12" id="prezzo">
+                    <h2>Your Price</h2>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
